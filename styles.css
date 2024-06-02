@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: #0E5484;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.section-title {
+    font-size: 1.5em;
+    border-bottom: 2px solid #0E5484;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.item {
+    margin: 10px 0;
+}
+
+.item-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-subtitle {
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.multicol {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.multicol .col {
+    flex: 1;
+    min-width: 30%;
+    padding: 5px;
+}
+
+a {
+    color: #0E5484;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .section-title {
+        font-size: 1.3em;
+    }
+
+    .item-title {
+        font-size: 1.1em;
+    }
+
+    .item-subtitle {
+        font-size: 0.9em;
+    }
+
+    .multicol {
+        flex-direction: column;
+    }
+
+    .multicol .col {
+        min-width: 100%;
+    }
+
+    .contact-info a {
+        display: block;
+        margin: 5px 0;
+    }
+}
